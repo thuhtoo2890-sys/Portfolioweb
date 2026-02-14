@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Thekt | Creative Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: #050505; color: #fff; scroll-behavior: smooth; }
+        .glass-header { background: rgba(5, 5, 5, 0.8); backdrop-filter: blur(15px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        .hero-gradient { background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%); }
+        .card-hover { transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1); background: #0f0f0f; border: 1px solid rgba(255,255,255,0.05); }
+        .card-hover:hover { transform: translateY(-10px); background: #151515; border-color: rgba(59, 130, 246, 0.4); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+        .project-img { filter: grayscale(100%); transition: all 0.5s; }
+        .card-hover:hover .project-img { filter: grayscale(0%); transform: scale(1.05); }
+    </style>
+</head>
+<body>
+
+    <header class="fixed top-0 w-full z-50 glass-header py-5 px-6 md:px-20 flex justify-between items-center">
+        <div class="text-xl font-extrabold tracking-tighter">CY<span class="text-blue-500">NIX</span>.</div>
+        <nav class="hidden md:flex space-x-10 text-xs uppercase tracking-widest font-semibold opacity-70">
+            <a href="#home" class="hover:text-blue-500 transition">Home</a>
+            <a href="#about" class="hover:text-blue-500 transition">About</a>
+            <a href="#projects" class="hover:text-blue-500 transition">Portfolio</a>
+            <a href="#services" class="hover:text-blue-500 transition">Services</a>
+            <a href="#contact" class="hover:text-blue-500 transition">Contact</a>
+        </nav>
+        <a href="#contact" class="bg-blue-600 px-6 py-2 rounded-full text-xs font-bold hover:bg-blue-700 transition">Let's Talk</a>
+    </header>
+
+    <section id="home" class="h-screen flex items-center justify-center relative hero-gradient px-6">
+        <div class="text-center" data-aos="zoom-out" data-aos-duration="1500">
+            <span class="text-blue-500 font-mono text-sm tracking-widest uppercase mb-4 block">Available for Freelance</span>
+            <h1 class="text-6xl md:text-9xl font-extrabold tracking-tighter leading-none mb-6">
+                Cynix Gun <br> <span class="opacity-30">FUTURE.</span>
+            </h1>
+            <p class="text-slate-400 max-w-xl mx-auto text-lg mb-10">
+                သပ်ရပ်သော ဒီဇိုင်းနှင့် ခေတ်မီနည်းပညာများကို ပေါင်းစပ်ကာ သင်၏ စိတ်ကူးများကို အကောင်းဆုံး ဖန်တီးပေးသည်။
+            </p>
+            <div class="flex justify-center gap-6">
+                <a href="#projects" class="bg-white text-black px-8 py-4 rounded-full font-bold hover:invert transition">View Portfolio</a>
+                <a href="#about" class="border border-white/20 px-8 py-4 rounded-full font-bold hover:bg-white/10 transition">About Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-32 px-6 md:px-20 border-t border-white/5">
+        <div class="grid md:grid-cols-2 gap-20 items-center">
+            <div class="relative" data-aos="fade-right">
+                <div class="w-full aspect-square bg-blue-600/10 rounded-3xl overflow-hidden border border-white/10 p-4">
+                    <img src="/IMG_20250719_200052_042.jpg" class="w-full h-full object-cover rounded-2xl grayscale hover:grayscale-0 transition duration-700">
+                </div>
+            </div>
+            <div data-aos="fade-left">
+                <h2 class="text-4xl font-bold mb-8 italic text-blue-500">WHO I AM</h2>
+                <p class="text-slate-300 text-xl leading-relaxed mb-8">
+                    ကျွန်တော်ကတော့ Coding နဲ့ Design ကို ရူးသွပ်တဲ့ Creative Developer တစ်ယောက်ပါ။ <br><br>
+                    ရိုးရိုးရှင်းရှင်း Web App တွေကနေ စပြီး အဆင့်မြင့် Business Solutions တွေအထိ သပ်သပ်ရပ်ရပ်နဲ့ စနစ်တကျ တည်ဆောက်ပေးပါတယ်။
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-6 bg-white/5 rounded-2xl border border-white/5">
+                        <h4 class="text-2xl font-bold">5+ Years</h4>
+                        <p class="text-xs text-slate-500 uppercase mt-1">Experience</p>
+                    </div>
+                    <div class="p-6 bg-white/5 rounded-2xl border border-white/5">
+                        <h4 class="text-2xl font-bold">150+</h4>
+                        <p class="text-xs text-slate-500 uppercase mt-1">Projects Done</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-32 px-6 md:px-20 bg-[#080808]">
+        <div class="mb-20 text-center">
+            <h2 class="text-5xl font-extrabold mb-4 tracking-tighter">PORTFOLIO</h2>
+            <p class="text-slate-500">ကျွန်တော် ဖန်တီးခဲ့ဖူးသော အမိုက်စား လက်ရာများ</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="card-hover p-4 rounded-[2.5rem]" data-aos="fade-up">
+                <div class="h-[400px] rounded-[2rem] overflow-hidden mb-8">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800" class="project-img w-full h-full object-cover">
+                </div>
+                <div class="px-6 pb-6">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-blue-500 font-mono text-xs uppercase tracking-widest">E-Commerce</span>
+                            <h3 class="text-3xl font-bold mt-2">Modern Storefront</h3>
+                        </div>
+                        <a href="#" class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-hover p-4 rounded-[2.5rem]" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-[400px] rounded-[2rem] overflow-hidden mb-8">
+                    <img src="/59ee4047d303d7ccf7d9cd16fc3d864c.jpg" class="project-img w-full h-full object-cover">
+                </div>
+                <div class="px-6 pb-6">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-purple-500 font-mono text-xs uppercase tracking-widest">Fintech</span>
+                            <h3 class="text-3xl font-bold mt-2">Digital Banking App</h3>
+                        </div>
+                        <a href="#" class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-32 px-6 md:px-20 border-t border-white/5">
+        <h2 class="text-4xl font-bold mb-16 italic">SERVICES</h2>
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="group p-10 bg-white/5 rounded-3xl border border-white/5 hover:border-blue-500/50 transition">
+                <div class="w-16 h-16 bg-blue-600/10 rounded-2xl flex items-center justify-center mb-8 text-blue-500 text-2xl group-hover:bg-blue-600 group-hover:text-white transition">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Web Development</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">High-performance website များကို နောက်ဆုံးပေါ် stack များဖြင့် တည်ဆောက်ပေးသည်။</p>
+            </div>
+            <div class="group p-10 bg-white/5 rounded-3xl border border-white/5 hover:border-blue-500/50 transition">
+                <div class="w-16 h-16 bg-blue-600/10 rounded-2xl flex items-center justify-center mb-8 text-blue-500 text-2xl group-hover:bg-blue-600 group-hover:text-white transition">
+                    <i class="fa-solid fa-bezier-curve"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">UI/UX Design</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">User များ အသုံးပြုရ လွယ်ကူစေမည့် သန့်ရှင်းသပ်ရပ်သော Interface များကို ဖန်တီးပေးသည်။</p>
+            </div>
+            <div class="group p-10 bg-white/5 rounded-3xl border border-white/5 hover:border-blue-500/50 transition">
+                <div class="w-16 h-16 bg-blue-600/10 rounded-2xl flex items-center justify-center mb-8 text-blue-500 text-2xl group-hover:bg-blue-600 group-hover:text-white transition">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">SEO & Content</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Google ရှာဖွေမှုတွင် ထိပ်ဆုံးမှ ပေါ်လာစေရန်နှင့် စွဲဆောင်မှုရှိသော Content များ ရေးသားပေးသည်။</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 px-6 md:px-20 bg-blue-600 text-black rounded-t-[3rem] md:rounded-t-[5rem]">
+        <div class="grid md:grid-cols-2 gap-20">
+            <h2 class="text-6xl md:text-8xl font-extrabold tracking-tighter">LET'S START <br> A PROJECT.</h2>
+            <div>
+                <p class="text-2xl font-medium mb-10 leading-relaxed">
+                    သင့်မှာ အမိုက်စား Idea တစ်ခုရှိသလား? <br> ကျွန်တော်နဲ့ အတူတူ အကောင်အထည်ဖော်လိုက်ပါ။
+                </p>
+                <a href="mailto:hello@minthekt.com" class="text-1xl font-black underline hover:opacity-70 transition">thuhtoo2890@gmail.com</a>
+                <div class="flex gap-8 mt-12 text-2xl">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 bg-blue-600 text-black border-t border-black/10 px-6 md:px-20 text-sm font-bold flex justify-between">
+        <p>© 2026 THS CYNIX. ALL RIGHTS RESERVED.</p>
+        <p>BACK TO TOP ↑</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        // Header scroll effect
+        window.onscroll = () => {
+            const header = document.querySelector('header');
+            if(window.scrollY > 50) header.classList.add('py-4', 'shadow-2xl');
+            else header.classList.remove('py-4', 'shadow-2xl');
+        }
+    </script>
+</body>
+</html>
